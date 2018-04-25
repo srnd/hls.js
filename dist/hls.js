@@ -15917,7 +15917,7 @@ var eme_controller_EMEController = function (_EventHandler) {
 /* harmony default export */ var eme_controller = (eme_controller_EMEController);
 // CONCATENATED MODULE: ./src/helper/mediakeys-helper.js
 var requestMediaKeySystemAccess = function () {
-  if (window.navigator && window.navigator.requestMediaKeySystemAccess) return window.navigator.requestMediaKeySystemAccess.bind(window.navigator);else return null;
+  if (typeof window !== 'undefined' && window.navigator && window.navigator.requestMediaKeySystemAccess) return window.navigator.requestMediaKeySystemAccess.bind(window.navigator);else return null;
 }();
 
 

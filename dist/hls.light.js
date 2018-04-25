@@ -11538,7 +11538,7 @@ var empty_default = /*#__PURE__*/__webpack_require__.n(empty);
 
 // CONCATENATED MODULE: ./src/helper/mediakeys-helper.js
 var requestMediaKeySystemAccess = function () {
-  if (window.navigator && window.navigator.requestMediaKeySystemAccess) return window.navigator.requestMediaKeySystemAccess.bind(window.navigator);else return null;
+  if (typeof window !== 'undefined' && window.navigator && window.navigator.requestMediaKeySystemAccess) return window.navigator.requestMediaKeySystemAccess.bind(window.navigator);else return null;
 }();
 
 
